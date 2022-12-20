@@ -1,0 +1,10 @@
+.header_img {
+    position: sticky;
+    z-index: 10;
+    top: 10%;
+    
+    img {
+        width: 30%;
+        background-color: $color-header-img;
+    }
+}

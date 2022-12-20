@@ -1,0 +1,15 @@
+.header_title {
+    position: static;
+    color: white;
+    font-size: $font-title;
+    margin-bottom: 20%;
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+
+        span {
+            z-index: 10;
+        }
+    }
+}
