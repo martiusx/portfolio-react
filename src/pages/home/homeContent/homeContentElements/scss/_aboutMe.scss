@@ -1,4 +1,34 @@
 .content_aboutMe {
     color: white;
     font-size: $font-text;
+    width: 50%;
+
+    &_visible {
+        text-transform: uppercase;
+        font-size: $font-text * .8;
+        margin-bottom: 3rem;
+    }
+
+    &_hidden {
+        font-size: $font-text * .7;
+        position: relative;
+    }
+    
+    &_button {
+        background-color: $color-web-background;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top:0;
+        transition: 1s;
+
+        &--on {
+            transform: translateY(100%);
+            margin-top: 3rem;
+        }
+
+        &--off {
+            transform: translateY(0%);
+        }
+    }
 }
