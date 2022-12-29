@@ -1,0 +1,37 @@
+.content_myCollection {
+    width: 100%;
+    margin-bottom: 4rem;
+    position: relative;
+
+    &_slider {
+        width: 100%;
+        width: fit-content;
+        position: relative;
+        padding: 0  35% 0 90%;
+        overflow: hidden;
+        cursor: grab;
+
+        &--wrapper {
+            display: flex;
+            gap: 40rem;
+        }
+
+        &--slide {
+            width: 700px;
+            height: 900px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+                display: none;
+              }
+
+            img {
+                width: 100%;
+                pointer-events: none;
+            }
+        }
+
+        a{
+            pointer-events: none;
+        }
+    }
+}
