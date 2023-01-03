@@ -2,12 +2,12 @@
     color: white;
     font-size: $font-text;
     width: 50%;
-    margin-bottom: 25rem;
+    margin-bottom: 20vw;
 
     &_visible {
         text-transform: uppercase;
         font-size: $font-text * .8;
-        margin-bottom: 3rem;
+        margin-bottom: 3vw;
     }
 
     &_hidden {
@@ -25,7 +25,7 @@
 
         &--on {
             transform: translateY(100%);
-            margin-top: 3rem;
+            margin-top: 3vw;
         }
 
         &--off {
