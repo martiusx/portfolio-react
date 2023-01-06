@@ -1,7 +1,5 @@
 import linkedinIcon from './assets/linkedin.png';
 import gitHubIcon from './assets/github.png';
-import telephoneIcon from './assets/telephon.png';
-import emailIcon from './assets/email.png';
 
 const HomeFooterContact = function() {
     return(
