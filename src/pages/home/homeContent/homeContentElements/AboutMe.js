@@ -1,11 +1,35 @@
-import {useState} from "react";
+import { useState, useEffect } from "react";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useAnimation } from "framer-motion";
 
 const AboutMe = function() {
-
     const [readMore, setReadMore] = useState(false);
+    const {ref, inView} = useInView({
+        threshold: 0.2
+    });
+    const animation = useAnimation();
+
+
+    useEffect(() => {
+        
+        if(inView){
+            animation.start({
+                y: 0,
+                transition: {
+                    type: 'spring', duration: 2, bounce: 0.3
+                }
+            });
+        }
+        if(!inView){
+            animation.start({y: '10vh'})
+        }
+    }, [inView, animation]);
 
     return(
-        <div className="content_aboutMe">
+        <motion.div ref={ref} className="content_aboutMe" 
+        animate={animation}
+        >
             <p className="content_aboutMe_visible">
                 i'm a novice programmer, seeking the job where i can take a first commercial
                  experience, and develop in the industry.            
@@ -28,7 +52,7 @@ const AboutMe = function() {
                     </span>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
