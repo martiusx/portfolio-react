@@ -14,8 +14,8 @@ const HomeFooterContact = function() {
                 </div>
             </div>
             <div className="footer__myProfiles">
-                <img src={gitHubIcon} alt="github link icon"></img>
-                <img src={linkedinIcon} alt="linkedin link"></img>
+                <a href="https://github.com/martiusx?tab=repositories" target='_blank'  rel="noreferrer"><img src={gitHubIcon} alt="github link icon"/></a>
+                <a href="https://www.linkedin.com/in/maciej-cis-519696251/" target='_blank'  rel="noreferrer"><img src={linkedinIcon} alt="linkedin link"/></a>
             </div>
         </>
     )
