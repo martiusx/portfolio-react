@@ -1,4 +1,4 @@
-.content_myCollection {
+.content__myCollection {
     width: 100%;
     position: relative;
     overflow-x: hidden;
@@ -11,10 +11,10 @@
         margin-left: 25vw;
         text-transform: uppercase;
         margin-bottom: 1vw;
-        font-size: $font-text * .7;
+        font-size: $font-size-text * .7;
     }
     
-    &_slider {
+    &__slider {
         width: 100%;
         width: fit-content;
         position: relative;
@@ -27,7 +27,7 @@
             gap: 40vw;
         }
 
-        &--slide {
+        &__slide {
             width: 40vw;
             height: 45vw;
             overflow-y: scroll;
@@ -38,6 +38,27 @@
             img {
                 width: 100%;
                 pointer-events: none;
+            }
+
+            &--info {
+                top: 0;
+                position: sticky;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $color-web-background;
+
+                a {
+                    text-decoration: none;
+                    color: $color-text-interactive;
+                    font-family: $font-family-interactive;
+                    font-size: $font-size-interactive;
+                }
+
+                p {
+                    font-size: $font-size-paragraph;
+                }
             }
         }
 
@@ -50,12 +71,8 @@
             overflow: visible;
         }
 
-        a {
-            pointer-events: none;
-        }
-
         h3 {
-            font-size: $font-text * 1.1;
+            font-size: $font-size-text * 1.1;
             color: wheat;
         }
     }
