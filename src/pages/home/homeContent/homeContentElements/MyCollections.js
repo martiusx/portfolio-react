@@ -52,7 +52,7 @@ const MyCollection = function() {
                             <motion.div key={index} className="content__myCollection__slider__slide">
                                 <div className="content__myCollection__slider__slide--info">
                                     <a href={image.link} target='_blank'  rel="noreferrer">" {image.name} "</a>
-                                    <p>What I used:</p>
+                                    <p>What I used: {image.usedTechnologies}</p>
                                 </div>
                                 <img src={image.number} alt={image.alt}/>
                             </motion.div>

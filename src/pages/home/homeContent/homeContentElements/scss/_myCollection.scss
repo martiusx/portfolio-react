@@ -29,7 +29,7 @@
 
         &__slide {
             width: 40vw;
-            height: 45vw;
+            height: 50vw;
             overflow-y: scroll;
             &::-webkit-scrollbar {
                 display: none;
@@ -42,6 +42,8 @@
 
             &--info {
                 top: 0;
+                width: 120%;
+                transform: translateX(-10%);
                 position: sticky;
                 display: flex;
                 flex-direction: column;
@@ -54,10 +56,12 @@
                     color: $color-text-interactive;
                     font-family: $font-family-interactive;
                     font-size: $font-size-interactive;
+                    margin-bottom: .5vw;
                 }
 
                 p {
                     font-size: $font-size-paragraph;
+                    margin-bottom: .5vw;
                 }
             }
         }
