@@ -7,19 +7,23 @@
     gap: 2vw;
     color: white;
 
+    h3 {
+        font-size: $font-size-text;
+    }
+
     &__element {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 1vw;
-    }
-    
-    img {
-        height: 3vw;
-    }
 
-    h5 {
-        font-size: $font-size-text;
+        p {
+            font-size: $font-size-text;
+        }
+
+        span {
+            font-size: $font-size-paragraph;
+        }
     }
 }
 
