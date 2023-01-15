@@ -1,83 +1,84 @@
 .content__myCollection {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  z-index: 1;
+
+  span {
+    display: block;
+    color: $color-text-main;
     width: 100%;
+    text-align: left;
+    margin-left: 25vw;
+    text-transform: uppercase;
+    margin-bottom: 1vw;
+    font-size: $font-size-text * 0.7;
+  }
+
+  &__slider {
+    width: 100%;
+    width: fit-content;
     position: relative;
-    overflow-x: hidden;
+    padding: 0 35% 0 0;
+    overflow: hidden;
+    cursor: grab;
 
-    span {
-        display: block;
-        color: white;
-        width: 100%;
-        text-align: left;
-        margin-left: 25vw;
-        text-transform: uppercase;
-        margin-bottom: 1vw;
-        font-size: $font-size-text * .7;
+    &--wrapper {
+      display: flex;
+      gap: 40vw;
     }
-    
-    &__slider {
+
+    &__slide {
+      width: 40vw;
+      height: 50vw;
+      overflow-y: scroll;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      img {
         width: 100%;
-        width: fit-content;
-        position: relative;
-        padding: 0  35% 0 0;
-        overflow: hidden;
-        cursor: grab;
+        pointer-events: none;
+      }
 
-        &--wrapper {
-            display: flex;
-            gap: 40vw;
+      &--info {
+        top: 0;
+        width: 120%;
+        transform: translateX(-10%);
+        position: sticky;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-web-background;
+
+        a {
+          text-decoration: none;
+          color: $color-text-second;
+          font-family: $font-family-second;
+          font-size: $font-size-interactive;
+          margin-bottom: 0.5vw;
         }
 
-        &__slide {
-            width: 40vw;
-            height: 50vw;
-            overflow-y: scroll;
-            &::-webkit-scrollbar {
-                display: none;
-              }
-
-            img {
-                width: 100%;
-                pointer-events: none;
-            }
-
-            &--info {
-                top: 0;
-                width: 120%;
-                transform: translateX(-10%);
-                position: sticky;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: $color-web-background;
-
-                a {
-                    text-decoration: none;
-                    color: $color-text-interactive;
-                    font-family: $font-family-interactive;
-                    font-size: $font-size-interactive;
-                    margin-bottom: .5vw;
-                }
-
-                p {
-                    font-size: $font-size-paragraph;
-                    margin-bottom: .5vw;
-                }
-            }
+        p {
+          font-size: $font-size-paragraph;
+          margin-bottom: 0.5vw;
         }
-
-        &--text {
-            margin-right: -23vw;
-            padding-left: 30vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: visible;
-        }
-
-        h3 {
-            font-size: $font-size-text * 1.1;
-            color: wheat;
-        }
+      }
     }
+
+    &--text {
+      margin-right: -23vw;
+      padding-left: 30vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: visible;
+    }
+
+    h3 {
+      font-size: $font-size-text * 1.1;
+      color: $color-text-main;
+    }
+  }
 }

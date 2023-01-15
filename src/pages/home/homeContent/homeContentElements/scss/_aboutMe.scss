@@ -1,40 +1,39 @@
 .content_aboutMe {
-    color: white;
-    font-size: $font-size-text;
-    width: 50%;
-    margin-bottom: 20vw;
+  font-size: $font-size-text;
+  width: 50%;
+  margin-bottom: 20vw;
 
-    &_visible {
-        text-transform: uppercase;
-        font-size: $font-size-text * .8;
-        margin-bottom: 3vw;
+  &_visible {
+    text-transform: uppercase;
+    font-size: $font-size-text * 0.8;
+    margin-bottom: 3vw;
+  }
+
+  &_hidden {
+    font-size: $font-size-text * 0.7;
+    position: relative;
+  }
+
+  &_button {
+    background-color: $color-web-background;
+    font-family: $font-family-second;
+    font-size: $font-size-interactive;
+    cursor: pointer;
+    color: $color-text-second;
+    font-style: italic;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transition: 1s;
+
+    &--on {
+      transform: translateY(100%);
+      margin-top: 3vw;
     }
 
-    &_hidden {
-        font-size: $font-size-text * .7;
-        position: relative;
+    &--off {
+      transform: translateY(0%);
     }
-    
-    &_button {
-        background-color: $color-web-background;
-        font-family: $font-family-interactive;
-        font-size: $font-size-interactive;
-        cursor: pointer;
-        color: $color-text-interactive;
-        font-style: italic;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-        top:0;
-        transition: 1s;
-
-        &--on {
-            transform: translateY(100%);
-            margin-top: 3vw;
-        }
-
-        &--off {
-            transform: translateY(0%);
-        }
-    }
+  }
 }
