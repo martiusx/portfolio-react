@@ -1,7 +1,7 @@
 .navigation__button {
   border: none;
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 19px;
+  height: 19px;
   position: relative;
   display: flex;
   border-radius: 50%;
@@ -22,12 +22,16 @@
   }
 
   &:hover div {
-    transform: scale(2.8);
+    transform: scale(3.4);
+
+    @media (max-width: 1000px) {
+      transform: scale(1);
+    }
   }
 
   &:hover span {
     opacity: 1;
-    transform: scaleX(4);
+    transform: scaleX(6);
   }
 
   span {
@@ -42,6 +46,17 @@
 
     &:nth-last-of-type(1) {
       margin-top: 5px;
+
+      @media (max-width: 1000px) {
+        transform: rotate(45deg);
+      }
     }
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    z-index: 100;
   }
 }

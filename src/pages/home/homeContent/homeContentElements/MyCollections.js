@@ -25,7 +25,7 @@ const MyCollection = function () {
       });
     }
     if (!inView) {
-      animation.start({ x: "50vh" });
+      animation.start({ x: "50vw" });
     }
   }, [inView, animation]);
   //slider sroll

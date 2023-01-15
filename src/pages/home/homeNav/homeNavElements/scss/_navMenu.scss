@@ -49,4 +49,9 @@
       color: $color-web-background;
     }
   }
+
+  @media (max-width: 1000px) {
+    width: 100vw;
+    right: -100vw;
+  }
 }

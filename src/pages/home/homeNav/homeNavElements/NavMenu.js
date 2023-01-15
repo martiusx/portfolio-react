@@ -23,7 +23,7 @@ const NavMenu = function (props) {
   };
 
   return (
-    <nav>
+    <nav ref={refOne}>
       <NavListElement text={<span>Junior</span>} />
       <NavListElement text={<span>Front-End Developer</span>} />
       <NavListElement text={<NavButton handleClick={() => setShow(!show)} />} />
@@ -32,7 +32,6 @@ const NavMenu = function (props) {
         animate={show ? "open" : "closed"}
         variants={variants}
         transition={{ duration: 0.5 }}
-        ref={refOne}
       >
         <div className="nav__menu__side-links">
           <span>
