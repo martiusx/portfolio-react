@@ -1,0 +1,14 @@
+@import "../homeNavElements/scss/navMenu";
+@import "../homeNavElements//scss/navButton";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-size: $font-size-paragraph;
+  padding: 2vw 6vw;
+  overflow-x: hidden;
+}
