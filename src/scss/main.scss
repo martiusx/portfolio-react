@@ -1,7 +1,7 @@
-@import '../../node_modules/reset-css/sass/reset';
+@import "../../node_modules/reset-css/sass/reset";
 
-@import './settings/colors';
-@import './global/global';
-@import './settings/fonts';
+@import "./settings/colors";
+@import "./settings/fonts";
+@import "./global/global";
 
-@import '../pages/home/scss/home';
+@import "../pages/home/scss/home";
